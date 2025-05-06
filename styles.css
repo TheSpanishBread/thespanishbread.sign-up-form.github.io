@@ -1,0 +1,142 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color-theme: #596D48;
+}
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url(Norse-Bold.otf);
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(Roboto-Black.ttf);
+}
+body{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Roboto';
+    
+}
+header{
+    background : url(photo-1585202900225-6d3ac20a6962.avif);
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    min-width: 30vw;
+}
+.banner{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    justify-content: center;
+    align-items: center;
+    color:white;
+    position: relative;
+    padding:1vw;
+}
+.logo{
+    position: absolute;
+    top:25vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.329);
+    width: 100%;
+    flex-wrap: wrap;
+    gap:1vw;
+    padding:1vw;
+
+
+}
+.credit{
+    position: absolute;
+    top:95vh;
+}
+.logo img{
+    width: clamp(80px, 20%, 30%);
+}
+.logo p{
+    font-family: 'Norse-Bold';
+    font-size: 7em;
+
+}
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgb(240, 240, 240);
+    gap:2.5vh;
+}
+main p{
+    padding: 2vh 3vw;
+    width:80%;
+    font-size: clamp(1rem,1.1vw,2rem);
+    font-weight: bold;
+    
+}
+main p a{
+    color:var(--color-theme);
+    text-decoration: none;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    gap:5vh;
+    padding: 2vw 3vw;
+    box-shadow: 10px 10px 22px -8px rgba(0,0,0,0.75);
+}
+fieldset{
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:2vw;
+    width: 70%;
+    
+}
+.section{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap:1vh;
+    font-size: clamp(0.8rem, 0.8vw, 2rem);
+}
+input{
+    height: 2rem;
+    border: 1px solid #E5E7EB;
+    border-radius: 0.5rem;
+    width: 100%;
+    padding:0.3rem;
+}
+input:focus{
+    border:1px solid blue;
+}
+input:invalid{
+    border:1px solid red;
+}
+
+button{
+    background-color: var(--color-theme);
+    border: none;
+    color:white;
+    font-family: 'Roboto';
+    font-size: 1rem;
+    padding:1vw;
+    border-radius: 0.5rem;
+    width:25%;
+    margin-left: 2vw;
+}
+a{
+    color:white;
+    text-decoration: underline;
+    
+}

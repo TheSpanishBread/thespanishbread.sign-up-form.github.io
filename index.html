@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Forms</title>
+    <link rel="stylesheet" href="styles.css">
+
+    
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <div class="logo">
+                <img src="odin-lined.png" alt="odin-logo">
+                <p>Odin</p>
+            </div>
+            <div class="credit">
+                <p>Photo by <a href="#">Hale West</a> on <a href="#">Unsplash</a></p>
+            </div>
+        </div>
+    </header>
+    <main>
+
+            <p>
+                This is not a real online service! You know you need something like this
+                in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.
+            </p>
+            <p>
+                You <em>know</em> you want to.
+            </p>
+
+        <form action="" method="post" id="register">
+            <h1>Let's do this!</h1>
+            <fieldset>
+                <div class="section">
+                    <label for="firstName">FIRST NAME</label>
+                    <input type="text" name="firstName" id="firstName" pattern="[a-zA-Z]+">    
+                </div>
+                <div class="section">
+                    <label for="lastName">LAST NAME</label>
+                    <input type="text" name="lastName" id="lastName" pattern="[a-zA-Z]+">
+                </div>
+                <div class="section">
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="section">
+                    <label for="phoneNumber">PHONE NUMBER</label>
+                    <input type="number" name="phoneNumber" min="00000000000" max="999999999999" id="phoneNumber">
+                </div>
+                <div class="section">
+                    <label for="pwd">PASSWORD</label>
+                    <input type="password" name="pwd" id="pwd">
+                </div>
+                <div class="section">
+                    <label for="confirmPwd">CONFIRM PASSWORD</label>
+                    <input type="password" name="confirmPwd" id="confirmPwd">
+                </div>
+            </fieldset>
+        </form>
+        <button type="submit" form="register">Create Account</button>
+        <p>Already have an account? <a href="#">Log in</a></p>
+    </main>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
