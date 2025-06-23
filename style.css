@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+a{
+    font-style: unset;
+    color: unset;
+    
+}
+a:visited{
+    color: unset;
+}
+:root{
+    --heroTitle: clamp(3rem,10vw,5rem);
+}
+.flexRow{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.flexColumn{
+    display:flex;
+    flex-direction: column;
+
+}
+@font-face {
+    font-family: 'Norse';
+    src: url(./fonts/Norse-Bold.otf);
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(./fonts/Roboto-VariableFont_wdth\,wght.ttf);
+}
+/*START*/
+main{
+    font-family: 'Roboto';
+    background-color: rgb(230, 230, 230);
+}
+.hero{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.233), rgba(0, 0, 0, 0.233)) , url(./images/photo-1585202900225-6d3ac20a6962.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: clamp(200px,45vw,2000px);
+    min-height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero > .heroTitle{
+    background-color: rgba(0, 0, 0, 0.582);
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    padding:1rem;
+    margin-top: 30vh;
+    width: 100%;
+}
+.hero > .heroTitle > img{
+    width: var(--heroTitle);
+}
+.hero > .heroTitle > h1{
+    font-family: 'Norse';
+    color:white;
+    font-size: var(--heroTitle);
+}
+.hero > .heroFooter{ /*changet to abosulote */
+    text-align: center;
+    color:white;
+    font-size: clamp(0.1rem,2vw,1rem);
+}
+/*FORM*/
+.signUpForm{
+    justify-content: space-evenly;
+    
+    gap:1rem;
+ }
+.signUpForm > h1{
+    font-size: clamp(1rem,1vw,3rem);
+    padding:0.5rem 4rem;
+
+}
+
+.signUpForm > form{
+    gap:2rem;
+}
+.signUpForm > form > fieldset{
+    flex-wrap: wrap;
+    font-size: clamp(1rem,1.5vw,3rem);
+    gap:1rem;
+    padding:2rem 4rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+
+}
+.signUpForm > form > fieldset > h2{
+    font-size: clamp(0.5rem,1.5vw,5rem);
+}
+.signUpForm > form > fieldset > .formInputContainer{
+    gap: clamp(1rem, 2vw, 5rem);
+    flex-wrap: wrap;
+    width: 80%;
+
+}
+.signUpForm > form > fieldset > .formInputContainer > .formEntry {
+    gap:0.5rem;
+}
+.signUpForm > form > fieldset > .formInputContainer > .formEntry > input{
+    padding:0.3rem;
+    border-radius: 0.2rem;
+    width: clamp(150px,20vw,1000px);
+    border: 1px solid gray;
+    font-family: 'Roboto';
+}
+.signUpForm > form > fieldset > .formInputContainer > .formEntry > label{
+    font-size: clamp(0.6rem,1vw,2rem);
+    color:rgb(71, 71, 71);
+}
+.signUpForm > form  > button{
+    padding:1rem 0.5rem;
+    background-color: #596D48;
+    width: clamp(200px,20%,500px);
+    border-radius: 0.5rem;
+    color:white;
+    font-family: 'Roboto';
+    font-weight: bold;
+    box-shadow: 0px 0px 8px 2px rgba(110, 110, 110, 0.75);
+    margin-left: clamp(3rem,4.5vw,4rem);
+}
+input:invalid{
+    border: 1px solid red;
+    background-color: rgb(255, 219, 219);
+}
+
+input:focus{
+    background-color: unset;
+    border: none;
+}
+
+.signUpForm > h3{
+    margin-left: clamp(3rem,4.5vw,4rem);
+    font-size: clamp(0.1rem,2vw,1rem);
+    padding:1rem 0.5rem;
+    font-weight: unset;
+}
